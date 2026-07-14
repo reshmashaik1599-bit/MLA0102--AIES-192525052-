@@ -1,0 +1,35 @@
+BEGIN
+
+Read number of nodes (n)
+
+Create an empty graph
+
+FOR each node from 1 to n DO
+    Read node
+    Read its neighboring nodes
+    Store them in the graph
+END FOR
+
+Read starting node
+
+Create an empty queue
+Create an empty visited set
+
+Enqueue starting node
+
+WHILE queue is not empty DO
+    Dequeue a node
+
+    IF node is not visited THEN
+        Print node
+        Mark node as visited
+
+        FOR each neighbor of node DO
+            IF neighbor is not visited THEN
+                Enqueue neighbor
+            END IF
+        END FOR
+    END IF
+END WHILE
+
+END

@@ -1,0 +1,32 @@
+BEGIN
+
+Read number of nodes (n)
+
+Create an empty graph
+
+FOR each node from 1 to n DO
+    Read node
+    Read its neighboring nodes
+    Store them in the graph
+END FOR
+
+Read starting node
+
+Create an empty visited set
+
+CALL DFS(start)
+
+PROCEDURE DFS(node)
+
+    IF node is not visited THEN
+        Print node
+        Mark node as visited
+
+        FOR each neighbor of node DO
+            CALL DFS(neighbor)
+        END FOR
+    END IF
+
+END PROCEDURE
+
+END
