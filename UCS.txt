@@ -1,0 +1,27 @@
+UNIFORM COST SEARCH (UCS) - PSEUDO CODE
+
+BEGIN
+
+1. Create a priority queue PQ.
+2. Insert the start node into PQ with cost = 0.
+3. Mark all nodes as unvisited.
+
+4. WHILE PQ is not empty DO
+      a. Remove the node with the minimum path cost.
+      b. IF the current node is the goal node THEN
+            Display the path and total cost.
+            STOP.
+      c. Mark the current node as visited.
+      d. FOR each neighboring node of the current node DO
+            IF the neighbor is not visited THEN
+               Calculate the new cost.
+               Insert the neighbor into PQ with the new cost.
+            END IF
+         END FOR
+   END WHILE
+
+5. IF the goal node is not reached THEN
+      Display "No path found."
+   END IF
+
+END
