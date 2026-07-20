@@ -1,0 +1,28 @@
+START
+
+Read graph.
+
+Read heuristic values.
+
+Read start node and goal node.
+
+Insert start node into priority queue.
+
+Repeat until queue becomes empty
+
+    Remove node with minimum f(n).
+
+    If goal is reached
+        Print path and cost.
+
+    Otherwise
+
+        For each neighbour
+
+            g = current cost + edge cost
+
+            f = g + heuristic
+
+            Insert into priority queue.
+
+STOP
