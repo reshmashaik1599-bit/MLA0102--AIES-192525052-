@@ -1,0 +1,27 @@
+START
+
+Read number of nodes.
+
+Create graph.
+
+Read heuristic values.
+
+Read edges.
+
+Read start node and goal node.
+
+Insert start node into priority queue.
+
+Repeat until queue becomes empty
+
+    Remove node with minimum heuristic.
+
+    If goal is reached
+        Stop.
+
+    Otherwise
+        Add all unvisited neighbours.
+
+Display path.
+
+STOP
