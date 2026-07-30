@@ -1,0 +1,8 @@
+Start
+Take the letters in SEND, MORE, and MONEY
+Generate all possible digit assignments
+Do not allow S and M to be 0
+Convert words into numbers
+If SEND + MORE = MONEY
+    Display the solution
+Stop

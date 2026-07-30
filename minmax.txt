@@ -1,0 +1,22 @@
+Algorithm MINIMAX(depth, nodeIndex, isMax)
+
+Input:
+    depth      → Current depth of the tree
+    nodeIndex  → Index of the current node
+    isMax      → TRUE if Maximizer's turn, FALSE if Minimizer's turn
+
+Begin
+    If depth = maximumDepth Then
+        Return value[nodeIndex]
+    End If
+
+    If isMax = TRUE Then
+        left  ← MINIMAX(depth + 1, nodeIndex × 2, FALSE)
+        right ← MINIMAX(depth + 1, nodeIndex × 2 + 1, FALSE)
+        Return MAX(left, right)
+    Else
+        left  ← MINIMAX(depth + 1, nodeIndex × 2, TRUE)
+        right ← MINIMAX(depth + 1, nodeIndex × 2 + 1, TRUE)
+        Return MIN(left, right)
+    End If
+End

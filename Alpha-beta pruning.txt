@@ -1,0 +1,22 @@
+AlphaBeta(node, depth, α, β, maximizingPlayer)
+
+if depth = 0 or node is terminal:
+    return value of node
+
+if maximizingPlayer:
+    best = -∞
+    for each child of node:
+        best = max(best, AlphaBeta(child, depth-1, α, β, False))
+        α = max(α, best)
+        if α >= β:
+            break   // Beta pruning
+    return best
+
+else:
+    best = +∞
+    for each child of node:
+        best = min(best, AlphaBeta(child, depth-1, α, β, True))
+        β = min(β, best)
+        if α >= β:
+            break   // Alpha pruning
+    return best
