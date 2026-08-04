@@ -1,0 +1,27 @@
+Algorithm BEST_FIRST_SEARCH(Graph, Start, Goal)
+
+Start
+    Create an empty Priority Queue
+    Create an empty Visited list
+
+    Insert Start node into the Priority Queue
+
+    While Priority Queue is not empty do
+        Remove the node with the smallest heuristic value
+
+        If node = Goal then
+            Display "Goal Found"
+            Stop
+        End If
+
+        Mark the node as visited
+
+        For each neighbor of the node do
+            If neighbor is not visited then
+                Insert neighbor into the Priority Queue
+            End If
+        End For
+    End While
+
+    Display "Goal Not Found"
+Stop

@@ -1,0 +1,11 @@
+Algorithm TOWER_OF_HANOI(n, Source, Auxiliary, Destination)
+
+Start
+    If n = 1 Then
+        Move disk from Source to Destination
+    Else
+        TOWER_OF_HANOI(n-1, Source, Destination, Auxiliary)
+        Move disk n from Source to Destination
+        TOWER_OF_HANOI(n-1, Auxiliary, Source, Destination)
+    End If
+Stop
