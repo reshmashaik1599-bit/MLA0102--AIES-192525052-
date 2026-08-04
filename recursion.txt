@@ -1,0 +1,10 @@
+Algorithm SUM(n)
+
+Start
+    Input n
+    If n = 1 Then
+        Return 1
+    Else
+        Return n + SUM(n - 1)
+    End If
+Stop

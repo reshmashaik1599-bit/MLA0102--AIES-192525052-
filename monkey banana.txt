@@ -1,0 +1,10 @@
+Algorithm MONKEY_BANANA
+
+Start
+    Move the monkey to the box
+    Push the box under the banana
+    Climb onto the box
+    Reach the banana
+    Grab the banana
+    Display "Goal Achieved"
+Stop
