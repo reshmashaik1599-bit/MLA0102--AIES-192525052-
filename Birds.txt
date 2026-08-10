@@ -1,0 +1,24 @@
+START
+
+Define birds:
+    Sparrow
+    Pigeon
+    Eagle
+    Ostrich
+    Penguin
+
+Define birds that cannot fly:
+    Ostrich
+    Penguin
+
+FOR each bird X:
+    IF X is a bird AND X is not in cannot-fly list
+        THEN X can fly
+    ELSE
+        X cannot fly
+    END IF
+END FOR
+
+Display all birds that can fly
+
+STOP

@@ -1,0 +1,35 @@
+FAMILY KNOWLEDGE REPRESENTATION
+
+START
+
+1. Create a list of male family members.
+
+2. Create a list of female family members.
+
+3. Store parent relationships.
+
+4. Define FATHER(X, Y):
+If X is male and X is parent of Y,
+then return TRUE.
+
+5. Define MOTHER(X, Y):
+If X is female and X is parent of Y,
+then return TRUE.
+
+6. Define SIBLING(X, Y):
+If X and Y have the same parent
+and X is not equal to Y,
+then return TRUE.
+
+7. Define GRANDPARENT(X, Y):
+If X is parent of Z
+and Z is parent of Y,
+then return TRUE.
+
+8. Test the family relationships.
+
+9. Display the results.
+
+10. Display all sibling relationships.
+
+STOP
