@@ -1,0 +1,24 @@
+START
+
+1. Read the customer loan dataset.
+
+2. Separate the data into:
+      Input features → Age, Income, Existing Loan
+      Output → Loan Approval
+
+3. Convert categorical values into numerical values.
+
+4. Create a Decision Tree Classifier.
+
+5. Train the classifier using the training data.
+
+6. Display the generated Decision Tree.
+
+7. Give the details of a new customer.
+
+8. Predict the loan decision using the trained tree.
+
+9. Display:
+      "Loan Decision: Yes" or "Loan Decision: No"
+
+STOP
