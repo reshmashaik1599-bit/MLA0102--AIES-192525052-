@@ -1,0 +1,39 @@
+BEGIN
+
+    Define initial facts
+        fever
+        cough
+
+    Define rules
+        fever AND cough → flu
+        flu → rest
+        flu AND rest → doctor_visit
+
+    Read the required GOAL
+
+    FUNCTION BackwardChaining(goal)
+
+        IF goal is present in facts
+            RETURN TRUE
+
+        IF no rule can produce the goal
+            RETURN FALSE
+
+        Find the rule that produces the goal
+
+        FOR each condition required by the rule
+            IF BackwardChaining(condition) is FALSE
+                RETURN FALSE
+        END FOR
+
+        RETURN TRUE
+
+    END FUNCTION
+
+    IF BackwardChaining(goal) is TRUE
+        Display "Goal can be proved"
+    ELSE
+        Display "Goal cannot be proved"
+    END IF
+
+END

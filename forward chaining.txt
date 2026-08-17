@@ -1,0 +1,34 @@
+BEGIN
+
+    Define initial facts
+        fever
+        cough
+
+    Define rules
+        IF fever AND cough
+            THEN flu
+
+        IF flu
+            THEN rest
+
+        IF flu AND rest
+            THEN doctor_visit
+
+    REPEAT
+        Set changed = FALSE
+
+        FOR each rule
+            IF all conditions of the rule are present in facts
+                AND conclusion is not already in facts
+            THEN
+                Add conclusion to facts
+                Display the derived conclusion
+                Set changed = TRUE
+            END IF
+        END FOR
+
+    UNTIL changed = FALSE
+
+    Display all final facts
+
+END
