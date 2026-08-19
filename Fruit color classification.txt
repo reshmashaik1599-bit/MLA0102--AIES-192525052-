@@ -1,0 +1,19 @@
+BEGIN
+
+    Define fruit-color facts:
+        red → apple
+        yellow → banana
+        orange → orange
+        green → guava
+        purple → grapes
+
+    Read the color from the user
+
+    Search the knowledge base for the given color
+
+    IF the color is found
+        Display the corresponding fruit
+    ELSE
+        Display "Unknown fruit"
+
+END

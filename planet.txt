@@ -1,0 +1,25 @@
+BEGIN
+
+    Define planet facts:
+        Mercury → terrestrial, position 1, 0 moons
+        Venus → terrestrial, position 2, 0 moons
+        Earth → terrestrial, position 3, 1 moon
+        Mars → terrestrial, position 4, 2 moons
+        Jupiter → gas giant, position 5, 95 moons
+        Saturn → gas giant, position 6, 146 moons
+
+    Read the planet name from the user
+
+    Search the knowledge base for the given planet
+
+    IF the planet is found
+        Retrieve:
+            Planet type
+            Position from Sun
+            Number of moons
+
+        Display the information
+    ELSE
+        Display "Planet not found"
+
+END
